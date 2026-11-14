@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>創價幼稚園 K1 面試準備｜何禮然 2027/28</title>
+<style>
+:root{--bg:#faf7f2;--card:#ffffff;--ink:#2b2620;--muted:#8a8177;--accent:#c96f4a;--accent-soft:#f6e3d8;--good:#3f7d5c;--bad:#b4453c;--line:#e8e0d5;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang HK","Noto Sans HK","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{padding:28px 16px 10px;text-align:center}
+header h1{font-size:1.5rem;letter-spacing:.02em}
+header p{color:var(--muted);font-size:.9rem;margin-top:4px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:12px 16px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);padding:8px 14px;border-radius:999px;font-size:.92rem;cursor:pointer;color:var(--ink)}
+nav button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+main{max-width:760px;margin:0 auto;padding:16px 16px 80px}
+section.page{display:none}
+section.page.active{display:block}
+h2{font-size:1.15rem;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
+h2 .tag{font-size:.7rem;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+.flow{display:flex;flex-direction:column;gap:8px}
+.flow .step{display:flex;gap:10px;align-items:flex-start}
+.flow .n{flex:0 0 26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
+.plus-minus{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.plus-minus{grid-template-columns:1fr}}
+.pm{border-radius:14px;padding:12px 14px;border:1px solid var(--line);background:var(--card)}
+.pm h3{font-size:.95rem;margin-bottom:6px}
+.pm.good h3{color:var(--good)}.pm.bad h3{color:var(--bad)}
+.pm li{font-size:.88rem;margin-left:18px}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--card);border-radius:12px;overflow:hidden}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.mnemo{background:#fdf3ea;border:1px dashed var(--accent);border-radius:12px;padding:10px 14px;margin:8px 0 14px}
+.mnemo b{color:var(--accent)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+details summary{cursor:pointer;padding:13px 16px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:8px}
+details summary::after{content:"＋";color:var(--accent);font-size:1.1rem}
+details[open] summary::after{content:"－"}
+details .body{padding:0 16px 14px;font-size:.92rem}
+.who{display:inline-block;font-size:.72rem;border-radius:6px;padding:1px 7px;margin-right:6px;background:var(--accent-soft);color:var(--accent)}
+.who.dad{background:#e3edf6;color:#3a6d9c}
+.who.mom{background:#f4e6f2;color:#a0568f}
+.samp{background:#f6f2ec;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:8px 12px;margin-top:6px}
+/* flashcards */
+#deck{display:flex;flex-direction:column;align-items:center;gap:14px}
+.fc{width:100%;max-width:420px;min-height:220px;perspective:1000px;cursor:pointer}
+.fc .inner{position:relative;width:100%;min-height:220px;transition:transform .5s;transform-style:preserve-3d}
+.fc.flipped .inner{transform:rotateY(180deg)}
+.fc .face{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.fc .front{background:var(--accent);color:#fff;font-size:1.15rem;font-weight:600}
+.fc .back{background:var(--card);border:2px solid var(--accent);transform:rotateY(180deg);font-size:.98rem}
+.fc .kicker{font-size:.72rem;opacity:.85;margin-bottom:8px}
+.fcctl{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.fcctl button{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;cursor:pointer}
+.counter{color:var(--muted);font-size:.85rem}
+/* quiz */
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.q h3{font-size:.98rem;margin-bottom:10px}
+.q .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;margin-bottom:8px;cursor:pointer;font-size:.9rem}
+.q .opt.correct{border-color:var(--good);background:#eef7f1}
+.q .opt.wrong{border-color:var(--bad);background:#f9ecea}
+.q .why{font-size:.82rem;color:var(--muted);margin-top:4px;display:none}
+.q.done .why{display:block}
+#result{display:none;background:var(--accent);color:#fff;border-radius:14px;padding:18px;text-align:center;font-size:1.1rem;font-weight:600;margin-bottom:14px}
+.sources li{font-size:.85rem;margin-bottom:8px;margin-left:18px;word-break:break-all}
+details.audit{margin:14px 0;background:#fff;border:1px solid #e5e0d8;border-radius:12px;padding:12px 16px}
+details.audit summary{cursor:pointer;font-weight:700;color:#7a4b12}
+details.audit p.auditnote{font-size:.85rem;color:#666;margin:8px 0}
+table.audit{width:100%;border-collapse:collapse;font-size:.82rem}
+table.audit td,table.audit th{border:1px solid #e5e0d8;padding:6px 8px;text-align:left;vertical-align:top}
+table.audit th{background:#faf6ef}
+table.audit td:first-child{width:2.2em;text-align:center;color:#999}
+.src{color:var(--muted);font-size:.75rem}
+footer{text-align:center;color:var(--muted);font-size:.75rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>創價幼稚園 K1 面試準備</h1>
+<p>何禮然（2024.8.21）｜2027/28 K1｜面試日 2026-11-14/15/21/22</p>
+</header>
+<nav id="nav">
+<button data-p="ov" class="active">總覽</button>
+<button data-p="qa">家長 Q&A</button>
+<button data-p="fc">記憶卡</button>
+<button data-p="qz">測驗</button>
+<button data-p="src">來源</button>
+</nav>
+<main>
+
+<section class="page active" id="ov">
+<h2>面試流程 <span class="tag">已查證</span></h2>
+<div class="card flow">
+<div class="step"><div class="n">1</div><div>提早 <b>30–45 分鐘</b>到校，禮堂有玩具畀小朋友<b>熱身</b>建立安全感（校長建議）</div></div>
+<div class="step"><div class="n">2</div><div>入課室：<b>兩位老師</b>——一位帶小朋友玩／發問，另一位觀察小朋友＋向家長提問</div></div>
+<div class="step"><div class="n">3</div><div><b>兩部分</b>：①小朋友整體能力（語言表達、認知、小肌肉、聽指令）②家長傾談（教養理念、對學校認識）</div></div>
+<div class="step"><div class="n">4</div><div>部分題目<b>爸媽要分別作答</b>（家長實錄：邊個照顧、家校合作）；排序會因應小朋友狀態調配</div></div>
+</div>
+
+<h2>加分位 vs 扣分位 <span class="tag">校長親述</span></h2>
+<div class="plus-minus">
+<div class="pm good"><h3>✓ 加分</h3><ul>
+<li>溫柔耐心帶領小朋友入校、講解、安撫</li>
+<li>小朋友喊／怕醜 → 即刻擁抱安撫，唔黑面</li>
+<li>放手俾小朋友自然表現，唔搶答</li>
+<li>展現同人本教育一致理念（尊重獨特性、唔催谷）</li>
+</ul></div>
+<div class="pm bad"><h3>✗ 扣分</h3><ul>
+<li>搶答／代答、迫孩子背答案</li>
+<li>當場責備小朋友、與其他孩子比較</li>
+<li>焦慮表情、情緒緊張</li>
+<li>對學校理念一無所知、遲到、手機冇靜音</li>
+</ul></div>
+</div>
+
+<h2>小朋友部分 <span class="tag">2歲組</span></h2>
+<table>
+<tr><th>題目／活動</th><th>準備</th></tr>
+<tr><td>你叫咩名？幾歲？</td><td>練「我叫何禮然」＋手指頭講歲數</td></tr>
+<tr><td>今日邊個帶你嚟？</td><td>練「爸爸媽媽」</td></tr>
+<tr><td>疊積木／砌拼圖／手抓板／配對</td><td>重點係<b>聽指令完成</b>，唔係快</td></tr>
+<tr><td>指認顏色／形狀／圖卡</td><td>消防車、救護車（佢最熟）</td></tr>
+<tr><td>聽指令（積木放入紅色盒）</td><td>遊戲形式練過就好，唔可以臨場逼</td></tr>
+<tr><td>自理：穿鞋、洗手</td><td>晨早程序卡練過，照實答</td></tr>
+<tr><td>禮貌語：早晨、多謝</td><td>獎勵表訓練緊，自然發揮</td></tr>
+<tr><td>分享玩具</td><td>練「好呀／俾你」</td></tr>
+</table>
+<div class="mnemo">🧒 <b>現場原則：</b>細路唔出聲完全正常，唔准代答；父母俾鼓勵眼神＋「禮然試下啦」，唔重複逼答。</div>
+
+<h2>學校理念 <span class="tag">背呢度</span></h2>
+<div class="card"><b>「創價」＝創造價值</b>（日文創価，Soka）— 源自日本教育家、創價學會首任會長<b>牧口常三郎</b>（1871–1944）：教育唔係國家嘅應急品，而係為學生本身嘅幸福。<b>1930</b> 年出版《創價教育學體系》。香港創價幼稚園由<b>香港國際創價學會</b>開辦（1992 創校），課程本身無宗教內容（概覽列「宗教：沒有」）。</div>
+<div class="mnemo">🎯 <b>性格口號：堅・正・活</b>（堅強・正直・活潑）— 重解難抗逆，唔催谷學術</div>
+<div class="mnemo">🧭 <b>五大使命口訣：身志群性望</b> — 身心健康｜自主意志｜合群關懷｜個性情操｜希望世界</div>
+<div class="mnemo">🌀 <b>教學法四寶：一條螺旋路，兩面睇，玩住學，唔使寫</b><br>螺旋式教學｜兩面思考（多角度思維，生活化主題如餐桌禮儀、珍惜食物）｜遊戲中學習＋每日唱遊美勞體能｜K1 不執筆寫字、不機械抄寫（概覽明文承諾）</div>
+<div class="mnemo">🤝 <b>品行由細開始：</b>對長輩、工人姐姐、唔同人嘅禮貌都係品行（校長原話）— 呢句係「家校合作」答案嘅最佳扣連。</div>
+
+<h2>學校基本盤 <span class="tag">已查證</span></h2>
+<table>
+<tr><th>項目</th><th>資料</th></tr>
+<tr><td>創校／團體／校長</td><td>1992｜香港國際創價學會｜馮婉惠</td></tr>
+<tr><td>地址</td><td>九龍塘慕禮道 4 號（約 16,000 呎校舍）</td></tr>
+<tr><td>學費</td><td>參加免費幼稚園計劃，兌券後約 HK$192–197/月</td></tr>
+<tr><td>報名／註冊</td><td>報名費 $40｜註冊費 $970（入讀後退回）</td></tr>
+<tr><td>競爭</td><td>每年逾 2,000 人報名爭 180 個 K1 位</td></tr>
+<tr><td>日程</td><td>面試 11/14、15、21、22｜12/11 電郵公布結果</td></tr>
+<tr><td>支援</td><td>駐校教育心理學家、新生及小一適應、家教會</td></tr>
+</table>
+</section>
+
+<section class="page" id="qa">
+<h2>答題總原則</h2>
+<div class="mnemo">💬 <b>短（兩三句）・真（舉生活例子）・扣人本理念</b>（尊重獨特性、唔催谷、家校合作）</div>
+<div class="mnemo">🔑 <b>四大題口訣：顧客和氣</b> — 顧＝邊個照顧｜客＝點解揀創價｜和＝家校合作｜氣＝發脾氣處理</div>
+<div id="qalist"></div>
+</section>
+
+<section class="page" id="fc">
+<h2>記憶卡 <span class="tag">㩒卡翻轉</span></h2>
+<div id="deck"><div class="fc" id="fcard" onclick="flip()"><div class="inner"><div class="face front"><div class="kicker" id="fKick"></div><div id="fFront"></div></div><div class="face back"><div class="kicker">答案</div><div id="fBack"></div></div></div></div><div class="counter" id="fCount"></div></div>
+<div class="fcctl"><button onclick="prevCard()">← 上一張</button><button onclick="flip()">翻轉</button><button onclick="nextCard()">下一張 →</button><button onclick="shuffleCards()">洗牌</button></div>
+</section>
+
+<section class="page" id="qz">
+<div id="result"></div>
+<div id="quiz"></div>
+<div class="fcctl"><button onclick="resetQuiz()">重新測驗</button></div>
+</section>
+
+<section class="page" id="src">
+
+<details class="audit" open>
+<summary>🛡️ Jev 事實核實表（32 條）</summary>
+<p class="auditnote">全部事實經 TypeSafe/Jev 兩回合審核：①陳述 vs 來源摘錄 → 32/32 PASS（信心 ≥0.9）；②本頁文本 vs 陳述 → 逐條核對。非官方「家長實錄」已標明性質。</p>
+<table class="audit"><thead><tr><th>#</th><th>已核實事實</th><th>來源</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>「創價」＝「創造價值」（日文創価，Soka），源自牧口常三郎。</td><td>池田大作官方網／創價學會全球網</td></tr>
+<tr><td>2</td><td>牧口常三郎（1871–1944）為創價學會首任會長及教育家，1930年出版《創價教育學體系》。</td><td>池田大作官方網／創價學會全球網</td></tr>
+<tr><td>3</td><td>香港創價幼稚園1992年創立，辦學團體為香港國際創價學會，校長馮婉惠、校監吳楚煜，地址九龍九龍城慕禮道4號，宗教：沒有。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>4</td><td>校舍約16,000平方呎，課室11個，設施包括戶外遊戲場地、室內遊戲場地、音樂室、語文室。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>5</td><td>辦學宗旨為「人本教育」：相信每位兒童獨特和充滿發展潛能，建立愉快、開放、多元化的學習環境。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>6</td><td>五項使命：健康身心、自主性和堅強意志、合群性和關懷他人、重視個性培養情操、對未來充滿希望放眼看世界。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>7</td><td>學校銳意培育學生擁有「堅強、正直、活潑」的性格，包括解難與抗逆能力。</td><td>TOPick 校長專訪</td></tr>
+<tr><td>8</td><td>學校利用螺旋式教學方法幫孩子建立世界觀。</td><td>HK01 校長訪問</td></tr>
+<tr><td>9</td><td>2021年起引入「多角度思維」模式，用生活化主題（餐桌禮儀、食物珍惜）引導「兩面思考」。</td><td>TOPick 校長專訪</td></tr>
+<tr><td>10</td><td>概覽明文承諾：不會要求幼兒班兒童執筆寫字，不做機械式抄寫或操練式計算。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>11</td><td>每天均有唱遊、美勞和體能活動，編排動靜交替的小組及個別學習活動。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>12</td><td>兒童學習經驗評估採用持續觀察、檢核表、軼事記錄和作品取樣。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>13</td><td>學校設有駐校教育心理學家、新生及小一適應活動，並設有家長教師會。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>14</td><td>學校參加教育局幼稚園教育計劃，兌券後每月學費192元；2027/28報道扣除資助後每期HKD197；報名費HK$40，註冊費HK$970入讀後退回。</td><td>TOPick＋教育局概覽</td></tr>
+<tr><td>15</td><td>每年逾2,000人報名爭奪180個K1學位。</td><td>TOPick 招生日程報道</td></tr>
+<tr><td>16</td><td>2027/28學年面試日為2026年11月14、15、21、22日，2026年12月11日電郵公布取錄結果。</td><td>TOPick 招生日程報道</td></tr>
+<tr><td>17</td><td>面試分兩部分：第一部分觀察小朋友整體能力（語言、表達、認知、小肌肉）；第二部分問家長如何管教、學校理念、為甚麼選該校。</td><td>HK01 校長訪問</td></tr>
+<tr><td>18</td><td>校長建議家長帶小朋友提早30至45分鐘到禮堂玩，建立安全感。</td><td>HK01 校長訪問</td></tr>
+<tr><td>19</td><td>全部申請人均獲安排面見，家長陪同兒童參與。</td><td>GoStudy 升幼攻略</td></tr>
+<tr><td>20</td><td>過往面試老師會與小朋友玩疊積木、砌拼圖，觀察是否聽指令及手眼協調；亦曾問「今日誰與你一同面試？」</td><td>家長實錄（教育王國／GoStudy）</td></tr>
+<tr><td>21</td><td>2位老師會輪流向家長提問，部分問題爸爸媽媽需要分別作答（平日誰主要照顧、家校合作、發脾氣處理）。</td><td>家長實錄（vocus／Threads）</td></tr>
+<tr><td>22</td><td>校長指出品行非常重要，包括在家中與長輩或傭人相處時、在外對不同人的禮貌，要從小培養。</td><td>HK01 校長訪問</td></tr>
+<tr><td>23</td><td>校長面試貼士：家長切忌搶答／代答／迫孩子背答案，小朋友喊時應擁抱安撫，並提醒對學校理念要有認識。</td><td>TOPick 校長專訪</td></tr>
+<tr><td>24</td><td>曾有創價幼稚園教師獲頒行政長官卓越教學獎；教育局質素評核報告對學校給予高度評價。</td><td>教育局概覽／EDB 質素評核報告</td></tr>
+<tr><td>25</td><td>創價教育學主張教育不是為國家或社會的附屬目的，而是為學生本身的幸福；價值論提出美、利、善三種價值範疇。</td><td>池田大作官方網／eduhk 論文</td></tr>
+<tr><td>26</td><td>創價學會以1930年11月18日（牧口《創價教育學體系》第一卷出版日）為創立日。</td><td>創價學會全球網</td></tr>
+<tr><td>27</td><td>香港創價幼稚園的辦學實踐與牧口創價教育學之「人本教育」理念相關（學術文獻討論香港創幼實踐）。</td><td>eduhk 學術論文</td></tr>
+<tr><td>28</td><td>家長實錄描述創價面試：小朋友玩手抓板、老師問家長「平日邊個照顧」「小朋友有咩優點」「假日去邊」等。</td><td>家長實錄（Threads／Instagram）</td></tr>
+<tr><td>29</td><td>家長實錄（Instagram／Threads／教育王國／Yahoo）屬非官方過往經驗，非校方官方資料。</td><td>來源性質標示</td></tr>
+<tr><td>30</td><td>四大面試貼士來自校長馮婉惠（TOPick 2026年報道）。</td><td>TOPick 校長專訪</td></tr>
+<tr><td>31</td><td>學校課程遵照《幼稚園教育課程指引》(2017)。</td><td>教育局概覽（GoodSchool／Kidemy）</td></tr>
+<tr><td>32</td><td>香港創價幼稚園屬「參加計劃」幼稚園（free quality kg education scheme）。</td><td>EDB 免費優質幼稚園教育計劃</td></tr>
+</tbody></table>
+</details>
+
+<h2>資料來源</h2>
+<ul class="sources" id="srclist"></ul>
+<div class="card src">家長分享（教育王國、方格子、Instagram 面試實錄）屬非官方經驗，僅作流程參考；官方事實以學校及教育局公布為準。醫療相關答案出發前須與太太核對現況。</div>
+</section>
+
+</main>
+<footer>Jev 審核：全部事實陳述經 TypeSafe/Jev 對照來源核實（信心 ≥0.8）· 備份於 GitHub</footer>
+
+<script>
+const QA=[
+{q:"Q1｜平日係邊個主要照顧小朋友？（父母分別答）",who:["dad","mom"],a:["我哋夫妻主力照顧，日間有外傭協助家務，但作息、飲食、玩耍同學習都係我哋親自跟。我係體育老師，放學返到屋企就帶佢做運動。","我同先生輪流主導：晨早程序卡係我哋一齊建立，佢自己刷牙著鞋都做得到。"]},
+{q:"Q2｜點解揀創價？",who:[],a:["我哋揀創價，係因為佢嘅人本教育同我哋屋企理念一致。學校相信每個小朋友都獨特、有潛能，用螺旋式同多角度思維教學，由餐桌禮儀呢啲生活主題教小朋友兩面思考同解難，唔催谷、唔抄寫操練，K1 都唔要求執筆。我哋都想禮然喺愉快環境建立自理、禮貌同唔怕困難嘅性格，即係學校講嘅「堅強、正直、活潑」。我哋亦認同學校重視品行——由屋企對長輩、對工人姐姐嘅禮貌開始，家校同一套。"]},
+{q:"Q3｜對家校合作有咩看法？（父母均需回答）",who:["both"],a:["我哋覺得家教合作好重要，小朋友品行係屋企同學校一齊建立。我哋樂意參加親子活動同家長日，有唔明白就同老師溝通，屋企會延續學校教嘅自理同禮貌訓練。"]},
+{q:"Q4｜小朋友發脾氣點處理？（父母分別答）",who:["dad","mom"],a:["我哋唔會即刻鬧，先蹲低同佢平視、講出佢嘅情緒（「你係咪嬲？」），等佢冷靜先再傾同引導佢講出嚟。我哋有用獎勵表鼓勵好行為，效果好好。"]},
+{q:"Q5｜小朋友有咩優點？",who:[],a:["佢動作能力好、鍾意運動同消防救護車，學新嘢快；有禮貌、鍾意同小朋友一齊玩；講「早晨」「多謝」好自然。"]},
+{q:"Q6｜假日帶佢去邊？",who:[],a:["公園玩波池、行山、圖書館睇書，仲有親子運動——爸爸係體育老師兼匹克球教練，會帶佢玩拍拍波。"]},
+{q:"Q7｜期望小朋友學到咩？",who:[],a:["唔係贏在起跑線，係自理、禮貌、表達同不怕困難嘅性格，對學習有興趣。"]},
+{q:"Q8｜認唔認同活動教學／唔主張催谷？",who:[],a:["完全認同。兩歲小朋友應該從玩中學，我哋屋企都係咁做。"]},
+{q:"Q9｜小朋友有冇過敏或特殊需要？",who:[],a:["佢身體健康。曾經有呼吸道症狀，睇醫生跟進過、有需要時用吸入式藥物，現在情況穩定；老師如需要我哋可以詳細講解。","⚠️ 出發前同太太核對目前狀態先講。"]},
+{q:"Q10｜如果佢抗拒返學點算？",who:[],a:["我哋會先了解原因、保持正向態度同老師溝通，唔會強逼，通常適應一兩星期就會好。"]},
+{q:"Q11｜屋企語言環境？",who:[],a:["主要廣東話，亦開始接觸簡單英文同普通話，爸爸教運動時會用英語動作詞。"]}
+];
+const whoLabel={dad:"爸",mom:"媽",both:"爸＋媽"};
+const QA_EL=document.getElementById("qalist");
+QA.forEach((x,i)=>{const d=document.createElement("details");d.innerHTML=`<summary><span>${x.q}</span></summary><div class="body">${x.a.map((t,j)=>{const w=x.who[j]||x.who[0];const lbl=w&&whoLabel[w]?`<span class="who ${w==="both"?"":w}">${whoLabel[w]}</span>`:"";const warn=w===undefined?"":(x.a[j].startsWith("⚠️")?"":lbl);return warn?`<div style="margin-top:8px">${lbl}${x.a[j].startsWith("⚠️")?"":x.a[j]}</div>`:(x.a[j].startsWith("⚠️")?`<div style="color:var(--bad);margin-top:6px">${x.a[j]}</div>`:x.a[j])}).join("")}</div>`;QA_EL.appendChild(d);});
+
+const CARDS=[
+{k:"字義",f:"「創價」係咩意思？",b:"創造價值（日文創価，Soka）— 源自牧口常三郎嘅價值論：教育為學生本身嘅幸福，人生目的就係創造價值。"},
+{k:"辦學",f:"辦學團體係邊個？",b:"香港國際創價學會（HKSGI），1992 年創校。學校課程本身無宗教內容（概覽列「宗教：沒有」）。"},
+{k:"人物",f:"校長係邊個？",b:"馮婉惠女士（校監吳楚煜）。"},
+{k:"地方",f:"地址同校舍？",b:"九龍塘慕禮道 4 號，約 16,000 呎校舍，11 個課室＋戶外/室內遊戲場＋音樂室＋語文室。"},
+{k:"銀碼",f:"學費／報名費／註冊費？",b:"參加免費幼稚園計劃：兌券後約 HK$192–197/月；報名費 $40；註冊費 $970（入讀後退回）。"},
+{k:"競爭",f:"幾多人爭幾多個位？",b:"每年逾 2,000 人報名，K1 收 180 人；面試日 11/14、15、21、22，12/11 電郵公布結果。"},
+{k:"宗旨",f:"辦學宗旨一句？",b:"人本教育 — 每位兒童獨特、充滿潛能；愉快、開放、多元化學習環境。"},
+{k:"性格",f:"性格培育口號？",b:"堅・正・活（堅強・正直・活潑）— 重解難、抗逆、判斷力、熱情，唔催谷。"},
+{k:"使命",f:"五大使命口訣？",b:"身志群性望 = 身心健康｜自主意志｜合群關懷｜個性情操｜希望世界。"},
+{k:"教學",f:"教學法四寶口訣？",b:"一條螺旋路，兩面睇，玩住學，唔使寫 — 螺旋式教學｜兩面思考｜遊戲中學習｜K1唔執筆。"},
+{k:"四大題",f:"家長四大題口訣？",b:"顧客和氣：顧＝邊個照顧｜客＝點解揀創價｜和＝家校合作｜氣＝發脾氣處理。"},
+{k:"流程",f:"面試幾多位老師、分幾部分？",b:"兩位老師（一位帶玩、一位觀察＋問家長）；兩部分：小朋友能力＋家長傾談。"},
+{k:"流程",f:"應該幾耐之前到？",b:"提早 30–45 分鐘，禮堂有玩具畀小朋友熱身建立安全感。"},
+{k:"臨場",f:"細路喊點算？",b:"即刻擁抱安撫，唔黑面、唔責備；冷靜後再返去同老師傾。"},
+{k:"課程",f:"K1 課程明文唔做咩？",b:"不執筆寫字、不做機械式抄寫或操練式計算（教育局概覽承諾）。"}
+];
+let deck=[...CARDS],ci=0;
+function show(){const c=deck[ci];document.getElementById("fKick").textContent=c.k;document.getElementById("fFront").textContent=c.f;document.getElementById("fBack").textContent=c.b;document.getElementById("fCount").textContent=(ci+1)+" / "+deck.length;const el=document.getElementById("fcard");el.classList.remove("flipped");}
+function flip(){document.getElementById("fcard").classList.toggle("flipped");}
+function nextCard(){ci=(ci+1)%deck.length;show();}
+function prevCard(){ci=(ci-1+deck.length)%deck.length;show();}
+function shuffleCards(){deck.sort(()=>Math.random()-0.5);ci=0;show();}
+show();
+
+const QUIZ=[
+{q:"「創價」二字嘅意思係？",o:["創造價值","創新價格","創辦貴族學校","價值投資"],a:0,why:"「創價」（創価，Soka）＝創造價值，源自牧口常三郎價值論。"},
+{q:"創價幼稚園幾時創校？",o:["1982","1992","2002","2012"],a:1,why:"1992 年創校，由香港國際創價學會開辦。"},
+{q:"面試有幾多位老師在場？",o:["一位","兩位","三位","四位"],a:1,why:"一位帶小朋友玩／發問，另一位觀察小朋友＋問家長。"},
+{q:"校方建議提早幾耐到校熱身？",o:["5–10分鐘","30–45分鐘","1小時","唔使早到"],a:1,why:"校長建議早 30–45 分鐘到禮堂玩玩具，建立安全感。"},
+{q:"邊個係校方明言嘅扣分位？",o:["小朋友答錯","家長搶答代答","細路怕醜","家長講廣東話"],a:1,why:"校長明言：家長應放手，切忌搶答；細路怕醜／喊學校理解。"},
+{q:"創價性格培育口號係？",o:["健康・快樂・聰明","堅強・正直・活潑","自信・自律・自學","禮貌・勤力・誠實"],a:1,why:"校方培育學生「堅強、正直、活潑」性格，重解難抗逆。"},
+{q:"概覽明文承諾 K1 唔會要求小朋友做咩？",o:["唱遊","執筆寫字","體能","美勞"],a:1,why:"概覽：遵照課程指引，不會要求幼兒班兒童執筆寫字、不做機械式抄寫。"},
+{q:"「兩面思考」教學用咩類主題？",o:["學術操練題","生活化主題（如餐桌禮儀）","英文默書","數學應用題"],a:1,why:"2021 年起引入多角度思維，用生活化主題引導兩面思考、正向解難。"},
+{q:"邊個唔係五大使命之一？",o:["健康身心","合群關懷","贏在起跑線","放眼看世界"],a:2,why:"五大使命：身心健康、自主意志、合群關懷、個性情操、希望世界；學校唔主張催谷。"},
+{q:"「顧客和氣」口訣個「客」代表邊條題？",o:["邊個照顧","點解揀創價","家校合作","發脾氣處理"],a:1,why:"客＝點解揀創價（要顯示做過功課）。"},
+{q:"報名費同註冊費分別係？",o:["$40／$970","$50/$500","$100/$1000","免費／$970"],a:0,why:"報名費 HK$40（網上信用卡），註冊費 HK$970 於入讀後退回。"},
+{q:"面試結果幾時公布？",o:["即日","12月11日電郵","1月","2月"],a:1,why:"2027/28 招生日程：2026-12-11 電郵公布取錄結果。"}
+];
+function renderQuiz(){const el=document.getElementById("quiz");el.innerHTML="";QUIZ.forEach((it,qi)=>{const d=document.createElement("div");d.className="q";d.innerHTML=`<h3>${qi+1}. ${it.q}</h3>`+it.o.map((o,oi)=>`<button class="opt" data-q="${qi}" data-o="${oi}" onclick="pick(this)">${String.fromCharCode(65+oi)}. ${o}</button>`).join("")+`<div class="why">💡 ${it.why}</div>`;el.appendChild(d);});document.getElementById("result").style.display="none";}
+function pick(btn){const q=document.querySelectorAll(".q")[+btn.dataset.q];if(q.classList.contains("done"))return;q.classList.add("done");const qi=+btn.dataset.q,oi=+btn.dataset.o;q.querySelectorAll(".opt").forEach((b,i)=>{if(i===QUIZ[qi].a)b.classList.add("correct");else if(i===oi)b.classList.add("wrong");});const answered=document.querySelectorAll(".q.done").length;if(answered===QUIZ.length){let s=0;QUIZ.forEach((it,i)=>{const q=document.querySelectorAll(".q")[i];if(q.querySelector(".opt.correct")&&q.querySelector(".opt.correct").style.cursor!=="");});s=[...document.querySelectorAll(".q")].filter(q=>q.querySelector(".opt.wrong")===null).length;const r=document.getElementById("result");r.style.display="block";r.textContent=`得分：${s} / ${QUIZ.length} ${s===QUIZ.length?"🎯 全對，可以出徵！":"繼續翻記憶卡再試一次。"}`;window.scrollTo({top:0,behavior:"smooth"});}}
+function resetQuiz(){renderQuiz();}
+renderQuiz();
+
+const SRC=[
+"TOPick 校長專訪：創價 4 大面試貼士、多角度思維、1.6 萬呎校舍 — https://topick.hket.com/article/3953801/",
+"TOPick 招生日程（2027/28）：面試 11/14-15/21-22、12/11 結果、學費 HK$197 — https://topschool.hket.com/article/4191391/",
+"HK01 創價校長訪問：禮堂熱身、兩位老師、兩部分、品行由細開始 — https://www.hk01.com/%E8%A6%AA%E5%AD%90/240429/",
+"Threads @miss.a.education.consultancy：面試兩部分、拼圖看圖講故事、4 大貼士 — https://www.threads.com/@miss.a.education.consultancy/post/Deiwbi_ATuC/",
+"GoStudy 升幼攻略：家長陪同面見、疊積木砌拼圖聽指令 — https://www.gostudy.hk/4765/",
+"方格子 vocus 面試實錄：爸媽分別作答、家校合作、發脾氣 — https://vocus.cc/article/655c7096fd897800019b7628",
+"GoodSchool（教育局概覽轉載）：1992、辦學團體、課程規劃、K1 不執筆、駐校教育心理學家、家教會 — https://www.goodschool.hk/%E9%A6%99%E6%B8%AF%E5%89%B5%E5%83%B9%E5%B9%BC%E7%A8%9A%E5%9C%92",
+"Kidemy 2026 學費及概覽整理 — https://www.kidemy.hk/blog/%E9%A6%99%E6%B8%AF%E5%89%B5%E5%83%B9%E5%B9%BC%E7%A8%9A%E5%9C%92",
+"池田大作官方網站：何謂創價教育（創價＝創造價值、牧口） — https://www.daisakuikeda.org/cht/main/educator/edu/edu-03.html",
+"創價學會全球網：創價學會歷史（1930-11-18《創價教育學體系》） — https://www.sokaglobal.org/cht/resources/study-materials/buddhist-study/the-basics-of-nichiren-buddhism-for-the-new-era-of-worldwide-kosen-rufu/chapter-9.html",
+"香港國際創價學會：創價教育 — https://hksgi.org/%E5%89%B5%E5%83%B9%E6%95%99%E8%82%B2",
+"eduhk 學術論文《創價教育學之內容闡釋》 — https://www.eduhk.hk/primaryed/eproceedings/fullpaper/RN222.pdf",
+"家長實錄（非官方）：教育王國 forum thread 175300｜Instagram @mscloudworkshop 面試收集 3/100｜Yahoo 新聞 創價收細B"
+];
+document.getElementById("srclist").innerHTML=SRC.map(s=>`<li>${s}</li>`).join("");
+
+document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll("section.page").forEach(s=>s.classList.remove("active"));document.getElementById(b.dataset.p).classList.add("active");window.scrollTo(0,0);});
+</script>
+</body>
+</html>
